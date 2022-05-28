@@ -1,10 +1,19 @@
 ---
 toc: true
 layout: post
-description: A minimal example of using markdown with fastpages.
-categories: [markdown]
+description: 테스트 페이지
+categories: [test]
 title: An Example Markdown Post
 ---
+# 그들의 장비와 기구는 모두 살아 있다.
+
+## 그들의 장비와 기구는 모두 살아 있다.
+
+### 그들의 장비와 기구는 모두 살아 있다.
+
+저 멀리 있는 별을 바라보는 일은 신성한 음악이나 고귀한 그림 또는 위대한 시인의 글귀와 같이 우리의 생각을 자극하고 정화하는 힘을 갖고 있어. 언제나 효과가 좋지.
+
+
 # Example Markdown Post
 
 ## Basic setup
