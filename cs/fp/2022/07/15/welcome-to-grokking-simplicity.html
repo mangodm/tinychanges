@@ -123,16 +123,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#액션-vs-계산-vs-데이터">액션 vs. 계산 vs. 데이터</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#시나리오로-살펴보는-액션-vs-계산-vs-데이터">시나리오로 살펴보는 액션 vs. 계산 vs. 데이터</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#1단계-사용자가-작업-완료-표시를-함">1단계: 사용자가 작업 완료 표시를 함.</a></li>
-<li class="toc-entry toc-h4"><a href="#2단계-클라이언트가-서버로-메시지를-보냄">2단계: 클라이언트가 서버로 메시지를 보냄.</a></li>
-<li class="toc-entry toc-h4"><a href="#3단계-서버가-메시지를-받음">3단계: 서버가 메시지를 받음.</a></li>
-<li class="toc-entry toc-h4"><a href="#4단계-서버가-데이터베이스를-변경">4단계: 서버가 데이터베이스를 변경</a></li>
-<li class="toc-entry toc-h4"><a href="#5단계-서버가-누구에게-알림을-보낼지-결정">5단계: 서버가 누구에게 알림을 보낼지 결정</a></li>
-<li class="toc-entry toc-h4"><a href="#6단계-서버가-이메일로-알림을-보냄">6단계: 서버가 이메일로 알림을 보냄</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h3"><a href="#시나리오로-살펴보는-액션-vs-계산-vs-데이터">시나리오로 살펴보는 액션 vs. 계산 vs. 데이터</a></li>
 <li class="toc-entry toc-h3"><a href="#액션-vs-계산-vs-데이터로-구분하는-것의-장점">액션 vs. 계산 vs. 데이터로 구분하는 것의 장점</a></li>
 </ul>
 </li>
@@ -215,31 +206,37 @@ window.onload = wrap_img;
 <a class="anchor" href="#%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4%EB%A1%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EB%8A%94-%EC%95%A1%EC%85%98-vs-%EA%B3%84%EC%82%B0-vs-%EB%8D%B0%EC%9D%B4%ED%84%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>시나리오로 살펴보는 액션 vs. 계산 vs. 데이터</h3>
 
 <ul>
-  <li>프로젝트 관리를 위해 클라우드 서비스(여러 클라이언트가 작업 완료 표시를 하면 서버에서 이메일을 통해 알려주는 서비스)를 만든다고 가정
-    <h4 id="1단계-사용자가-작업-완료-표시를-함">
-<a class="anchor" href="#1%EB%8B%A8%EA%B3%84-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%9E%91%EC%97%85-%EC%99%84%EB%A3%8C-%ED%91%9C%EC%8B%9C%EB%A5%BC-%ED%95%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>1단계: 사용자가 작업 완료 표시를 함.</h4>
+  <li>프로젝트 관리를 위해 클라우드 서비스(여러 클라이언트가 작업 완료 표시를 하면 서버에서 이메일을 통해 알려주는 서비스)를 만든다고 가정</li>
+  <li>1단계: 사용자가 작업 완료 표시를 함.
+    <ul>
+      <li>액션, 실행 횟수에 의존하기 때문</li>
+    </ul>
   </li>
-  <li>액션, 실행 횟수에 의존하기 때문
-    <h4 id="2단계-클라이언트가-서버로-메시지를-보냄">
-<a class="anchor" href="#2%EB%8B%A8%EA%B3%84-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EA%B0%80-%EC%84%9C%EB%B2%84%EB%A1%9C-%EB%A9%94%EC%8B%9C%EC%A7%80%EB%A5%BC-%EB%B3%B4%EB%83%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>2단계: 클라이언트가 서버로 메시지를 보냄.</h4>
+  <li>2단계: 클라이언트가 서버로 메시지를 보냄.
+    <ul>
+      <li>메시지를 보내는 것은 액션이지만, 메시지 자체는 데이터</li>
+    </ul>
   </li>
-  <li>메시지를 보내는 것은 액션이지만, 메시지 자체는 데이터
-    <h4 id="3단계-서버가-메시지를-받음">
-<a class="anchor" href="#3%EB%8B%A8%EA%B3%84-%EC%84%9C%EB%B2%84%EA%B0%80-%EB%A9%94%EC%8B%9C%EC%A7%80%EB%A5%BC-%EB%B0%9B%EC%9D%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>3단계: 서버가 메시지를 받음.</h4>
+  <li>3단계: 서버가 메시지를 받음.
+    <ul>
+      <li>액션, 횟수에 의존하기 때문</li>
+    </ul>
   </li>
-  <li>액션, 횟수에 의존하기 때문
-    <h4 id="4단계-서버가-데이터베이스를-변경">
-<a class="anchor" href="#4%EB%8B%A8%EA%B3%84-%EC%84%9C%EB%B2%84%EA%B0%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EB%B3%80%EA%B2%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>4단계: 서버가 데이터베이스를 변경</h4>
+  <li>4단계: 서버가 데이터베이스를 변경
+    <ul>
+      <li>액션, 내부 상태를 바꾸기 때문</li>
+    </ul>
   </li>
-  <li>액션, 내부 상태를 바꾸기 때문
-    <h4 id="5단계-서버가-누구에게-알림을-보낼지-결정">
-<a class="anchor" href="#5%EB%8B%A8%EA%B3%84-%EC%84%9C%EB%B2%84%EA%B0%80-%EB%88%84%EA%B5%AC%EC%97%90%EA%B2%8C-%EC%95%8C%EB%A6%BC%EC%9D%84-%EB%B3%B4%EB%82%BC%EC%A7%80-%EA%B2%B0%EC%A0%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>5단계: 서버가 누구에게 알림을 보낼지 결정</h4>
+  <li>5단계: 서버가 누구에게 알림을 보낼지 결정
+    <ul>
+      <li>결정하는 것은 계산</li>
+    </ul>
   </li>
-  <li>결정하는 것은 계산
-    <h4 id="6단계-서버가-이메일로-알림을-보냄">
-<a class="anchor" href="#6%EB%8B%A8%EA%B3%84-%EC%84%9C%EB%B2%84%EA%B0%80-%EC%9D%B4%EB%A9%94%EC%9D%BC%EB%A1%9C-%EC%95%8C%EB%A6%BC%EC%9D%84-%EB%B3%B4%EB%83%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>6단계: 서버가 이메일로 알림을 보냄</h4>
+  <li>6단계: 서버가 이메일로 알림을 보냄
+    <ul>
+      <li>이메일 보내기는 액션. 결정(계산)과 결정된 내용을 전송(액션)하는 것은 다름.</li>
+    </ul>
   </li>
-  <li>이메일 보내기는 액션. 결정(계산)과 결정된 내용을 전송(액션)하는 것은 다름.</li>
 </ul>
 
 <h3 id="액션-vs-계산-vs-데이터로-구분하는-것의-장점">
